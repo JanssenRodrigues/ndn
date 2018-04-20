@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"  href="assets/css/ndn.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+
+
+</head>
+<body>
+    <div class="about-new-again">
+        <div class="container">
+            <h2 class="section-title">Novo 
+                <span>de novo</span>
+            </h2>
+            <p class="section-description">Conheça o programa Novo de Novo em <span>parceria com o gpa</span> e colabore com a reciclagem você também.</p>
+            <div class="info bg-trash">
+                <h3 class="info-title">Como <span>funciona?</span></h3>
+                <p class="info-description">Descarte as embalagens em uma das estações disponíveis nas lojas do GPA ou nos Caixas Verdes.</p>
+            </div>
+            <div class="info bg-paper">
+                <h3 class="info-title">Para onde vai?</h3>
+                <p class="info-description">As embalagens de papel-cartão descartadas nas nossas lojas se transformam em um novo produto Taeq.</p>
+            </div>
+            <div class="info bg-products">
+                <h3 class="info-title">Como?</h3>
+                <p class="info-description">As cooperativas de reciclagem vendem a matéria-prima para fabricantes de papel-cartão. Gráficas adquirem esse papel reciclado e produzem as embalagens de novos produtos Taeq. </p>
+
+                <p class="info-description">Eles serão disponibilizados nas gôndolas, fechando um ciclo de sustentabilidade e que contribui com o meio ambiente.</p>
+            </div>
+            <div class="swiper-container stages">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                       <span class="icon user"></span>
+                       <h3 class="title">Cliente</h3>
+                       <p class="description">Constribuição com a sustentabilidade e meio ambiente consome</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon trash"></span>
+                       <h3 class="title">estações de coleta</h3>
+                       <p class="description">Em lojas Pão de açúcar e Extra</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon car"></span>
+                       <h3 class="title">Coleta</h3>
+                       <p class="description">Cooperativa coleta e separa os resíduos</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon recycle"></span>
+                       <h3 class="title">Matéria-prima</h3>
+                       <p class="description">Transformação em novo papel cartão</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon paper"></span>
+                       <h3 class="title">Papel Cartão</h3>
+                       <p class="description">Gráficas compram o papel cartão para produzir novas embalagens Taeq</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon factory"></span>
+                       <h3 class="title">Fabricantes</h3>
+                       <p class="description">Fornecem os novos produtos que levarão a embalagem reciclada</p>
+                   </div>
+                   <div class="swiper-slide item">
+                       <span class="icon packing"></span>
+                       <h3 class="title">Embalagens</h3>
+                       <p class="description">Novas embalagens recicladas Taeq vão para as gôndolas</p>
+                   </div>
+               </div>
+               <div class="prev"></div>
+               <div class="next"></div>
+           </div>            
+        </div>
+   </div>
+   <script>
+        window.onload = function(e){ 
+            if(window.innerWidth < 1024){
+                var slider = new Swiper('.stages', {
+                    loop: true,
+                    slidesPerView: 1,
+                    navigation: {
+                      nextEl: '.next',
+                      prevEl: '.prev',
+                    },
+                });                
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+</body>
+</html>
